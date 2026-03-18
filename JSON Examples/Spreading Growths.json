@@ -1,0 +1,20 @@
+{ //This is an example of how to use the Spreading Growths Feature (Original is from Arcanmira)
+  "type": "ebonylib:spreading_growths", //This feature behaves very similarly to the Vanilla multiface growth.
+  "config": {
+    "block": "arcanmira:lumen_berries", //Block to place. It is recommended that this should be a Glow Lichen-like block.
+    "can_be_placed_on": [ //List of block that the Spreading Growths can place on.
+      "arcanmira:chert",
+      "arcanmira:algal_chert",
+      "arcanmira:rhyolite",
+      "arcanmira:polished_rhyolite",
+      "arcanmira:hydestone_bricks",
+      "arcanmira:chiseled_hydestone_bricks"
+    ],
+    "can_place_on_floor": false,
+    "can_place_on_wall": true,
+    "can_place_on_ceiling": true, //These three parameters behave the same as Vanilla.
+    "max_growth_count": 26, //Maximum number of single blocks that can generate in one feature.
+    "patch_size": 19, //Area that the growths can spread to around the feature.
+    "search_range": 30 //Range of search for a valid placement condition.
+  }
+}
