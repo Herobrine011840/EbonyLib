@@ -1,0 +1,51 @@
+{ //This is an example of how to use the Speleothem (Original is from Arcanmira)
+  "type": "ebonylib:speleothem", //These behave almost exactly like the vanilla Large Dripstone columns, the only exception is that you can configure what block the speleothem is made of and which blocks it can attach to.
+  "config": {
+    "column_radius": {
+      "type": "minecraft:uniform",
+      "value": {
+        "max_inclusive": 12,
+        "min_inclusive": 3
+      }
+    },
+    "floor_to_ceiling_search_range": 30,
+    "height_scale": {
+      "type": "minecraft:uniform",
+      "value": {
+        "max_exclusive": 40,
+        "min_inclusive": 10
+      }
+    },
+    "max_column_radius_to_cave_height_ratio": 0.33,
+    "min_bluntness_for_wind": 0.6,
+    "min_radius_for_wind": 4,
+    "stalactite_bluntness": {
+      "type": "minecraft:uniform",
+      "value": {
+        "max_exclusive": 3,
+        "min_inclusive": 1
+      }
+    },
+    "stalagmite_bluntness": {
+      "type": "minecraft:uniform",
+      "value": {
+        "max_exclusive": 4,
+        "min_inclusive": 1
+      }
+    },
+    "wind_speed": {
+      "type": "minecraft:uniform",
+      "value": {
+        "max_exclusive": 0.3,
+        "min_inclusive": 0.0
+      }
+    },
+    "valid_base_blocks": "arcanmira:underground_mobs_can_spawn_on", //Needs to be a tag.
+    "block_provider": { //Weighted state providers also work here.
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "arcanmira:salt_block"
+      }
+    }
+  }
+}
