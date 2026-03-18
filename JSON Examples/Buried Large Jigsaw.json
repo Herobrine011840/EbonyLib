@@ -1,0 +1,17 @@
+{ //This is an example of how to use the Buried Large Jigsaw Structure type. It behaves exactly like the Large Jigsaw, but it checks for solid blocks before generating. (Note: Heightmaps may not work correctly with this structure type.)
+  "type": "ebonylib:buried_large_jigsaw",
+  "biomes": "#minecraft:is_overworld",
+  "step": "surface_structures",
+  "terrain_adaptation": "none",
+  "spawn_overrides": {},
+  "start_pool": "minecraft:village/town_centers",
+  "size": 32, //Jigsaw size can be larger than the vanilla 7. (Up to 100) Larger sizes than 40 may severely impact performance.
+  "start_height": {
+    "absolute": -20
+  },
+  "use_expansion_hack": false,
+  "max_distance_from_center": { //The max distance can be defined in both horizontal and vertical values. Max for both is 1024. (Up from vanilla 128)
+    "horizontal": 512,
+    "vertical": 1024
+  }
+}
