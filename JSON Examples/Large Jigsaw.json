@@ -1,0 +1,30 @@
+{ //This is an example of how to use the Large Jigsaw Structure type. It behaves exactly like the vanilla jigsaw structure type, but has virtually no limits.
+  "type": "ebonylib:large_jigsaw",
+  "biomes": "#minecraft:is_overworld",
+  "step": "surface_structures",
+  "terrain_adaptation": "none",
+  "spawn_overrides": {
+    "monster": {
+      "bounding_box": "piece",
+      "spawns": [
+        {
+          "type": "minecraft:zombie",
+          "weight": 20,
+          "minCount": 2,
+          "maxCount": 4
+        }
+      ]
+    }
+  },
+  "start_pool": "minecraft:village/town_centers",
+  "size": 32, //Jigsaw size can be larger than the vanilla 7. (Up to 100) Larger sizes than 40 may severely impact performance.
+  "start_height": {
+    "absolute": 0
+  },
+  "use_expansion_hack": false,
+  "project_start_to_heightmap": "WORLD_SURFACE_WG",
+  "max_distance_from_center": { //The max distance can be defined in both horizontal and vertical values. Max for both is 1024. (Up from vanilla 128)
+    "horizontal": 512,
+    "vertical": 1024
+  }
+}
