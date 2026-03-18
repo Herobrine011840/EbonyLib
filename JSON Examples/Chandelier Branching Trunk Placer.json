@@ -1,5 +1,5 @@
 { //This is an example of how to use the Chandelier Branching Trunk Placer (Original is from Into the Woods)
-  "type": "minecraft:tree",
+  "type": "minecraft:tree", //This trunk is very similar to the Fancy Branching Trunk as it is based off of that one.
   "config": {
     "dirt_provider": {
       "type": "minecraft:simple_state_provider",
