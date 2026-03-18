@@ -1,0 +1,19 @@
+{ //This is an example of how to use the Multifeature. It allows you to easily use feature stacking.
+  "type": "ebonylib:multi_feature",
+  "config": {
+    "primary": { //The first feature to place
+      "feature": "minecraft:ore_diamond_large",
+      "placement": []
+    },
+    "secondary": { //The second feature to place
+      "feature": "minecraft:ore_iron",
+      "placement": []
+    },
+    "primary_offset_x": 2,
+    "primary_offset_y": -4,
+    "primary_offset_z": 0,
+    "secondary_offset_x": -3,
+    "secondary_offset_y": 1,
+    "secondary_offset_z": 0 //All six of these parameters allow you to offset either feature if you need to.
+  }
+}
