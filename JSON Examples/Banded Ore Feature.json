@@ -1,0 +1,40 @@
+{ //This is an example of how to use the Banded Ore Feature (Original is from Arcanmira)
+  "type": "ebonylib:banded_ore",
+  "config": {
+    "targets": [ //What blocks can replace and what the blocks get replaced by. (Behaves exactly like Vanilla Ore features.)
+      {
+        "state": {
+          "Name": "arcanmira:chert_eldbrass_ore"
+        },
+        "target": {
+          "predicate_type": "minecraft:tag_match",
+          "tag": "arcanmira:base_stone_arcanmira"
+        }
+      }
+    ],
+    "size": { //Radius of an Ore Band.
+      "type": "minecraft:uniform",
+      "value": {
+        "min_inclusive": 4,
+        "max_inclusive": 9
+      }
+    },
+    "layer_count": { //Number of layers that generate in one feature.
+      "type": "minecraft:uniform",
+      "value": {
+        "min_inclusive": 2,
+        "max_inclusive": 5
+      }
+    },
+    "layer_size": { //How thick each ore band can generate.
+      "type": "minecraft:uniform",
+      "value": {
+        "min_inclusive": 1,
+        "max_inclusive": 1
+      }
+    },
+    "layer_spacing": 4, //How many blocks vertically between ore bands.
+    "layer_seeping": 0.05, //Percent chance of an ore block placing in the empty space between ore bands.
+    "ore_chance": 0.85 //Percent chance of a block getting replaced by an ore on the band layer.
+  }
+}
