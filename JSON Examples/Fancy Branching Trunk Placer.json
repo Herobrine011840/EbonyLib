@@ -35,7 +35,7 @@
   	  "branch_start_max": 4, //Min and max height above the bottom of the trunk that branches can place
   	  "branch_end_max": 1, //How many blocks below the top of the main tree trunk that branches can generate.
   	  "branch_length_min": 3,
-  	  "branch_length_max": 6, //Min and max length of each induvidual branch. Small branches are not affected by this.
+  	  "branch_length_max": 6, //Min and max length of each individual branch. Small branches are not affected by this.
   	  "small_branch_length_min": 1,
   	  "small_branch_length_max": 2, //Min and max length of small branches. These extend outwards in a random direction from the main branch.
   	  "small_branch_chance": 0.1, //Chance of small branches generating (Evaluated for every log on a branch)
