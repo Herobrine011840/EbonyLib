@@ -36,7 +36,7 @@
       "branch_start_min": 3,
       "branch_start_max": 5, //Min and max height above the bottom of the trunk that branches can place
       "branch_length_min": 10,
-      "branch_length_max": 16, //Min and max length of each induvidual branch. Small branches are not affected by this.
+      "branch_length_max": 16, //Min and max length of each individual branch. Small branches are not affected by this.
       "small_branch_length_min": 2,
       "small_branch_length_max": 2, //Min and max length of small branches. These extend outwards in the same direction as the big branch they are attached to.
       "small_branch_chance": 0.25, //Chance of small branches generating (Evaluated for every log on a branch)
