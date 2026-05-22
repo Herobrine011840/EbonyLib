@@ -1,4 +1,4 @@
-# EbonyLib is a library for Forge 1.20.1 that focuses on adding new ways to configure custom Features and Jigsaw structures! You can find examples of how to use these worldgen features in JSON in the repository.
+# EbonyLib is a library for Forge 1.20.1 that focuses on adding new ways to configure custom Features and Jigsaw structures! You can find examples of how to use these worldgen features in JSON in the repository. (Note: The examples shown are for 1.20.1 and are subject to format changes between versions.)
 
 Curseforge page: https://www.curseforge.com/minecraft/mc-mods/ebonylib
 
