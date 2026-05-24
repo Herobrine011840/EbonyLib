@@ -1,0 +1,30 @@
+{ //This is an example of how to use the Noise Gradient Ore feature. This is useful for generating huge quantities of blocks in a given area.
+  "type": "ebonylib:noise_gradient_ore",
+  "config": {
+    "noise": "minecraft:end/base_3d_noise", //This value accepts any noise JSONs.
+    "gradient": [ //The Gradient can take multiple variables, which can vary what gets replaced and where.
+      {},
+      {},
+      {},
+      {},
+      {},
+      { "state": { "Name": "minecraft:stone" } },
+      { "state": { "Name": "minecraft:deepslate" } },
+      {},
+      { "state": { "Name": "minecraft:deepslate" } },
+      { "state": { "Name": "minecraft:calcite" } }
+    ],
+    "replaceable": [
+      "minecraft:base_stone_overworld" //Needs to be a tag.
+    ],
+	"biomes": [
+	  "minecraft:dripstone_caves" //This can be an array or a tag. Biomes are specified here so that the gradients don't leak into other biomes.
+	]
+  }
+}
+
+//EXTRA NOTE: This feature does not need a placed_feature.json file for setup, as the configuration tells it where to generate. You will, however, need aplaced feature JSON that looks like the one below to register it in a biome.
+{
+  "feature": "minecraft:dripstone_caves_rock_noise", //This is just the above feature's identifier name.
+  "placement": []
+}
