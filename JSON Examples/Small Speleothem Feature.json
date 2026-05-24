@@ -1,0 +1,109 @@
+{ //This is an example of how to use Small Speleothems
+  "type": "minecraft:simple_random_selector", //These behave almost exactly like vanilla, the only exception is that you can configure what block is used for the base and the pointed dripstones and which blocks it can attach to.
+  "config": {
+    "features": [
+      {
+        "feature": {
+          "type": "ebonylib:small_speleothem",
+          "config": {
+            "base_block": {
+              "Name": "minecraft:stone" //Weighted state providers also work here.
+            },
+            "chance_of_directional_spread": 0.72,
+            "chance_of_spread_radius2": 0.5,
+            "chance_of_spread_radius3": 0.4,
+            "chance_of_taller_generation": 0.36,
+            "pointed_block": {
+              "Name": "minecraft:pointed_dripstone", //Weighted state providers also work here.
+              "Properties": {
+                "thickness": "tip",
+                "vertical_direction": "up",
+                "waterlogged": "false"
+              }
+            },
+            "replaceable_blocks": "#minecraft:base_stone_overworld" //Needs to be a tag.
+          }
+        },
+        "placement": [
+          {
+            "type": "minecraft:environment_scan",
+            "allowed_search_condition": {
+              "type": "minecraft:any_of",
+              "predicates": [
+                {
+                  "type": "minecraft:matching_blocks",
+                  "blocks": "minecraft:air"
+                },
+                {
+                  "type": "minecraft:matching_blocks",
+                  "blocks": "minecraft:water"
+                }
+              ]
+            },
+            "direction_of_search": "down",
+            "max_steps": 12,
+            "target_condition": {
+              "type": "minecraft:solid"
+            }
+          },
+          {
+            "type": "minecraft:random_offset",
+            "xz_spread": 0,
+            "y_spread": 1
+          }
+        ]
+      },
+      {
+        "feature": {
+          "type": "ebonylib:small_speleothem",
+          "config": {
+            "base_block": {
+              "Name": "minecraft:stone" //Weighted state providers also work here.
+            },
+            "chance_of_directional_spread": 0.72,
+            "chance_of_spread_radius2": 0.5,
+            "chance_of_spread_radius3": 0.4,
+            "chance_of_taller_generation": 0.36,
+            "pointed_block": {
+              "Name": "minecraft:pointed_dripstone", //Weighted state providers also work here.
+              "Properties": {
+                "thickness": "tip",
+                "vertical_direction": "up",
+                "waterlogged": "false"
+              }
+            },
+            "replaceable_blocks": "#minecraft:base_stone_overworld" //Needs to be a tag.
+          }
+        },
+        "placement": [
+          {
+            "type": "minecraft:environment_scan",
+            "allowed_search_condition": {
+              "type": "minecraft:any_of",
+              "predicates": [
+                {
+                  "type": "minecraft:matching_blocks",
+                  "blocks": "minecraft:air"
+                },
+                {
+                  "type": "minecraft:matching_blocks",
+                  "blocks": "minecraft:water"
+                }
+              ]
+            },
+            "direction_of_search": "up",
+            "max_steps": 12,
+            "target_condition": {
+              "type": "minecraft:solid"
+            }
+          },
+          {
+            "type": "minecraft:random_offset",
+            "xz_spread": 0,
+            "y_spread": -1
+          }
+        ]
+      }
+    ]
+  }
+}
