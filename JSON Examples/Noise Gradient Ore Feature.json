@@ -23,7 +23,7 @@
   }
 }
 
-//EXTRA NOTE: This feature does not need a placed_feature.json file for setup, as the configuration tells it where to generate. You will, however, need aplaced feature JSON that looks like the one below to register it in a biome.
+//EXTRA NOTE: This feature does not need a placed_feature.json file for setup, as the configuration tells it where to generate. You will, however, need a placed feature JSON that looks like the one below to register it in a biome.
 {
   "feature": "minecraft:dripstone_caves_rock_noise", //This is just the above feature's identifier name.
   "placement": []
