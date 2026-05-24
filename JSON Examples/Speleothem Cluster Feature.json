@@ -1,0 +1,52 @@
+{ //This is an example of how to use Speleothem Clusters
+  "type": "ebonylib:speleothem_cluster", //These behave almost exactly like the vanilla Dripstone Clusters, the only exception is that you can configure what block is used for the base and the pointed dripstones and which blocks it can attach to.
+  "config": {
+    "base_block": {
+      "Name": "minecraft:dripstone_block" //Weighted state providers also work here.
+    },
+    "pointed_block": {
+      "Name": "minecraft:pointed_dripstone", //Weighted state providers also work here.
+      "Properties": {
+        "thickness": "tip",
+        "vertical_direction": "up",
+        "waterlogged": "false"
+      }
+    },
+    "replaceable_blocks": "#minecraft:base_stone_overworld", //Needs to be a tag.
+    "chance_of_speleothem_at_max_distance_from_center": 0.2,
+    "density": {
+      "type": "minecraft:uniform",
+      "value": {
+        "max_exclusive": 0.64,
+        "min_inclusive": 0.31
+      }
+    },
+    "speleothem_block_layer_thickness": {
+      "type": "minecraft:uniform",
+      "value": {
+        "max_inclusive": 1,
+        "min_inclusive": 1
+      }
+    },
+    "floor_to_ceiling_search_range": 30,
+    "height": {
+      "type": "minecraft:uniform",
+      "value": {
+        "max_inclusive": 7,
+        "min_inclusive": 1
+      }
+    },
+    "height_deviation": 3,
+    "max_distance_from_center_affecting_height_bias": 8,
+    "max_distance_from_edge_affecting_chance_of_speleothem": 2,
+    "max_stalagmite_stalactite_height_diff": 1,
+    "radius": {
+      "type": "minecraft:uniform",
+      "value": {
+        "max_inclusive": 8,
+        "min_inclusive": 2
+      }
+    },
+    "wetness": 0
+  }
+}
